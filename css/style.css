@@ -59,12 +59,10 @@ body {
   border-radius: 3px;
   background-color: #f8ffff;
   margin-top: 10px;
-  padding-top: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 25px;
 }
 
 td{
-  width: 300px;
+  width: 30%;
   height: 50px;
 }

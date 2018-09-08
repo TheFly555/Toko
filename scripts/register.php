@@ -1,15 +1,23 @@
 <?php
 include_once 'connect.php';
 
-$registerUsername = mysql_real_escape_string($conn, $_POST['registerUsername']);
-$registerEmail = $_POST['registerEmail'];
-$registerFirstName = $_POST['registerFirstName'];
-$registerLastName = $_POST['registerLastName'];
-$registerPassword = $_POST['registerPassword'];
+$registrerenVoornaam = $_POST['registrerenVoornaam'];
+$registrerenAchternaam = $_POST['registrerenAchternaam'];
+$registrerenEmail = $_POST['registrerenEmail'];
+$registrerenGeboorteDatum = $_POST['registrerenGeboorteDatum'];
+$registrerenAdres = $_POST['registrerenAdres'];
+$registrerenPlaatsnaam = $_POST['registrerenPlaatsnaam'];
+$registrerenWachtwoord = $_POST['registrerenWachtwoord'];
+$registrerenConfirmWachtwoord = $_POST['registrerenConfirmWachtwoord'];
 $registerSubmit = $_POST['registerSubmit'];
 
 if (isset($registerSubmit)) {
+  if ($registrerenConfirmWachtwoord == $registrerenWachtwoord) {
 
+  } else {
+    header('Location: ../pages/register.php?register=error');
+    exit();
+  }
 } else {
   header('Location: ../pages/home.php');
   exit();
