@@ -13,7 +13,7 @@ if (!$conn)
    $servername = "localhost";
    $username = "root";
    $password = "";
-   $dbname = "opdrachten";
+   $dbname = "toko";
 
    $conn = mysqli_connect($servername, $username, $password, $dbname);
 }
