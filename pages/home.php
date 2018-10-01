@@ -8,12 +8,7 @@
     <?php include_once 'templates/navbar.php'; ?>
 
     <div class="containter">
-      <div class="col-md-6 centerpage">
-        <a href="register.php">Registreren</a>
-        <br>
-        <br>
-        <a href="login.php">Login</a>
-      </div>
+      
     </div>
 
     <!-- Optional JavaScript -->
