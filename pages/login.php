@@ -10,7 +10,7 @@
     <div class="containter">
       <div class="col-md-6 centerpage">
         <h1>Login</h1>
-        <form class="" action="../scripts/register.php" method="post">
+        <form class="" action="../scripts/login.php" method="post">
           <table>
             <tr>
               <td><h4>E-mail:</h4></td>
@@ -18,7 +18,7 @@
             </tr>
             <tr>
               <td><h4>Wachtwoord:</h4></td>
-              <td><input class="form-control" type="Wachtwoord" name="loginWachtwoord" placeholder="Wachtwoord" maxlength="55"></td>
+              <td><input class="form-control" type="password" name="loginWachtwoord" placeholder="Wachtwoord" maxlength="55"></td>
             </tr>
             <tr>
               <td></td>

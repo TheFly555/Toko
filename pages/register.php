@@ -14,7 +14,7 @@
           <table>
             <tr>
               <td><h4>Voornaam:</h4></td>
-              <td><input class="form-control" type="text" name="registrerenVoornaam" value="Voornaam" maxlength="55"></td>
+              <td><input class="form-control" type="text" name="registrerenVoornaam" placeholder="Voornaam" maxlength="55"></td>
             </tr>
             <tr>
               <td><h4>Achternaam:</h4></td>

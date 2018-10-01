@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <?php include_once '../scripts/database.php'; ?>
 <!-- Required meta tags -->
 <meta charset="utf-8">

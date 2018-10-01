@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 include_once 'connect.php';
 
 //Manual ID/Index numbers input database
@@ -21,7 +23,7 @@ $registrerenPlaatsnaam = $_POST['registrerenPlaatsnaam'];
 
 $registrerenWachtwoord = $_POST['registrerenWachtwoord'];
 $registrerenConfirmWachtwoord = $_POST['registrerenConfirmWachtwoord'];
-$hashedWachtwoord = password_hash($registrerenPostcode, PASSWORD_DEFAULT);
+$hashedWachtwoord = md5($registrerenWachtwoord);
 
 $registrerenSubmit = $_POST['registrerenSubmit'];
 

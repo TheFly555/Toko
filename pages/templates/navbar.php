@@ -9,11 +9,23 @@
         <a class="nav-link" href="home.php">Home</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0 button-navbar" action="register.php">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Register</button>
-      </form>
-      <form class="form-inline my-2 my-lg-0 button-navbar" action="login.php">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Login</button>
-    </form>
-  </div>
+
+    <?php
+    //Login,Rigister,logout button script
+    if (isset($_SESSION['gebruikerId'])) {
+      echo "
+      <form class='logoutForm' action='../scripts/logout.php' method='POST'>
+         <button class='btn btn-secondary my-2 my-sm-0' type='submit' name='logoutButton'>Logout</button>
+      </form>";
+    } else {
+      echo "
+      <form class='form-inline my-2 my-lg-0 button-navbar' action='register.php'>
+        <button class='btn btn-secondary my-2 my-sm-0' type='submit'>Register</button>
+        </form>
+        <form class='form-inline my-2 my-lg-0 button-navbar' action='login.php'>
+        <button class='btn btn-secondary my-2 my-sm-0' type='submit'>Login</button>
+      </form>";
+    }
+     ?>
+   </div>
 </nav>
